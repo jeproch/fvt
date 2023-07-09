@@ -1,0 +1,353 @@
+#home-page {
+  transition: 1s ease-in-out;
+}
+
+#resources-page {
+  transition: 1s ease-in-out;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+/* 
+Image for project
+*/
+
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 500px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 20%;
+  border: 1px solid transparent;
+  margin-top: 0;
+  margin-right: 30px;
+}
+
+/* 
+Image for project
+*/
+
+.content h1 {
+  margin-left: 120px;
+  color: white;
+  margin-top: 55px;
+}
+
+.content p {
+  margin-left: 120px;
+  color: rgb(191, 192, 194);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2c2c2c;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 999;
+  background-image: url(images/wallhaven-qdzmoq_3840x2160.png); /* Replace with the path to your hexagon pattern image */
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-button {
+  margin-bottom: 10px;
+  padding: 7px 12px;
+  background-color: rgb(223, 14, 14);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  color: antiquewhite;
+}
+
+.nav-button:hover {
+  background-color: #7c7c7c;
+  padding: 10px 15px;
+}
+
+ul {
+  margin-left: 80px;
+}
+
+.project-class {
+  display: flex;
+  flex-direction: row; /* Change from column to row */
+  align-items: center; /* Add this to vertically align the image and text */
+  margin-top: 20px;
+  font-size: 30px;
+  color: #373833;
+  margin-left: 120px;
+}
+
+.project-class img {
+  width: 500px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 20%;
+  margin-right: 20px; /* Add margin to create space between the image and text */
+  margin-top: 10;
+}
+
+.image-for-project img {
+  margin-top: 60px;
+}
+
+.project-class h1,
+.project-class p {
+  margin-left: 0; /* Remove the left margin to align with the image */
+}
+
+.text-for-project h2 {
+  color: rgb(255, 255, 255);
+}
+
+.project-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.project-button button {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  color: white;
+  background-color: rgb(223, 14, 14);
+  border: none;
+  border-radius: 5px;
+}
+
+.project-button button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #7c7c7c;
+  padding: 12px 17px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 0px;
+  color: rgb(191, 192, 194);
+}
+
+.resources-class h2 {
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.resources-class ul {
+  font-size: 20px;
+  margin-top: 0px;
+  color: rgb(191, 192, 194);
+  margin-left: 0px;
+}
+
+.text-for-column {
+  margin-right: 20px;
+}
+
+/* bottom bar content */
+.bottom-bar {
+  width: 100%;
+  padding-bottom: 100px;
+  height: 150px;
+  background-color: rgb(37, 37, 37);
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-bar h2 {
+  color: rgb(255, 255, 255);
+  margin-top: 35px;
+  font-size: 35px;
+  margin-left: 130px;
+  margin-bottom: 0px;
+  padding-top: 20px; /* Baie belangrik!! */
+}
+
+.bottom-bar p {
+  margin-left: 130px;
+  color: #929292;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.bottom-bar li {
+  color: #929292;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/* All about page here */
+
+.about-page {
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.about-page-info {
+  /* Excludes title elements h2 */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-page p {
+  display: flex;
+  flex-direction: row; /* Display the text and image in a row */
+  align-items: center; /* Vertically align the text and image */
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.about-page img {
+  margin-left: 30px; /* Add some spacing between the text and image */
+}
+
+.about-page h2 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+
+.text-for-about p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  margin-top: 0px;
+  color: rgb(191, 192, 194);
+}
+
+.image-for-about img {
+  width: 500px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 20%;
+  border: 1px solid transparent;
+  margin-top: 0;
+  margin-right: 30px;
+}
+
+/* About page end */
+
+/* All contact page css below here */
+
+.contact-page {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.contact-page h2 {
+  color: rgb(191, 192, 194);
+}
+
+.contact-page h1,
+li {
+  color: rgb(255, 255, 255);
+}
+
+.contact-page button {
+  margin-bottom: 10px;
+  padding: 7px 12px;
+  background-color: rgb(223, 14, 14);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  color: antiquewhite;
+}
+
+.contact-page button:hover {
+  background-color: #7c7c7c;
+  padding: 10px 15px;
+}
+
+/* services */
+
+.resources-page-image img {
+  width: 500px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 20%;
+  margin-left: 60px;
+  margin-top: 10;
+}
+
+.resources-page {
+  display: flex;
+  flex-direction: row; /* Change from column to row */
+  align-items: center;
+}
+
+.resources-class {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.resources-class li {
+  margin-bottom: 15px;
+  color: rgb(191, 192, 194);
+}
+
+.resources-content h2 {
+  margin-left: 30px;
+  font-size: 50px;
+  color: white;
+}
+
+.services-column-one {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.resources-content h3 {
+  margin-left: 30px;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+
+.resources-content button {
+  margin-bottom: 10px;
+  margin-left: 100px;
+  padding: 7px 12px;
+  background-color: rgb(223, 14, 14);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  color: antiquewhite;
+}
+
+.resources-content button:hover {
+  background-color: #7c7c7c;
+  padding: 10px 15px;
+}
