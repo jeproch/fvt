@@ -81,24 +81,22 @@ ion-icon:hover {
   display: none;
 }
 
-.blur-effect {
-  filter: blur(100px);
-}
-
 .navigation-dropdown {
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; /* Change 'flex-start' to 'center' */
   position: relative;
   z-index: 9997;
-}
-
-.close-dropdown {
-  align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 .close-dropdown button {
   background-color: transparent;
   font-size: 32px;
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* Add this line to center the button */
+  transform: translateX(-50%); /* Add this line to center the button */
+  align-items: center;
 }
 
 .navigation-dropdown button {
@@ -116,4 +114,15 @@ ion-icon:hover {
   transition: 0.3s ease-in-out;
   padding: 13px 17px;
   background-color: lightslategray;
+}
+
+/* Home Contents */
+
+.home-contents {
+  margin-top: 120px;
+  margin-left: 20px;
+}
+
+.home-contents p {
+  color: aliceblue;
 }
