@@ -1,12 +1,3 @@
-var isMobile =
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  );
-
-if (isMobile) {
-  window.location.href = "mobile.html";
-}
-
 let homeBtn = document.getElementById("home-el");
 let homePage = document.getElementById("home-page");
 let contactPage = document.getElementById("contact-page");
@@ -19,6 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Code to execute when the DOM is ready
   servicesPage.classList.add("hide");
   aboutPage.classList.add("hide");
+  var isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+
+  if (isMobile) {
+    window.location.href = "mobile.html";
+  }
 });
 
 // Buttons
