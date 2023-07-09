@@ -15,8 +15,3 @@ menuBtn.addEventListener("click", function () {
   menuBtn.classList.add("hide");
   headingContents.classList.add("hide");
 });
-
-function toggleBlur() {
-  var overlay = document.getElementById("overlay");
-  overlay.style.display = overlay.style.display === "none" ? "block" : "none";
-}

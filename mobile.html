@@ -10,7 +10,14 @@
     <div class="navigation-dropdown" id="navigation-dropdown">
       <button>Projects</button>
       <button>About</button>
-      <button>Contact</button>
+      <button>Contact</button> <br />
+      <div class="close-dropdown"></div>
+      <button id="close-button">
+        <ion-icon
+          name="close-outline"
+          style="background-color: transparent"
+        ></ion-icon>
+      </button>
     </div>
 
     <div class="heading-contents" id="heading-contents">
@@ -21,12 +28,7 @@
         </div>
       </div>
       <div class="heading-objects">
-        <button
-          type="button"
-          class="button"
-          id="menu-btn"
-          onclick="toggleBlur()"
-        >
+        <button type="button" class="button" id="menu-btn">
           <span class="button-icon"
             ><ion-icon name="menu-outline"></ion-icon
           ></span>
