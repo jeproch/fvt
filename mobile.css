@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: rgb(71, 71, 71);
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+/* HEADING */
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 0 0 25% 0;
+  position: absolute;
+  transition: 1s ease-in-out;
+}
+
+.heading-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading h1 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.heading h2 {
+  font-size: 20px;
+  margin-left: 20px;
+  color: rgb(150, 150, 150);
+}
+
+.heading-objects button {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none;
+  padding: 20px 20px;
+}
+
+ion-icon {
+  font-size: 32px;
+}
+
+ion-icon:hover {
+  transition: 0.3s ease-in-out;
+  font-size: 38px;
+}
+
+.heading-text {
+  color: white;
+}
+
+/* MENU */
+
+.menu-dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.432);
+  backdrop-filter: blur(10px);
+  z-index: 9998;
+  display: none;
+}
+
+.blur-effect {
+  filter: blur(100px);
+}
+
+.navigation-dropdown {
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  z-index: 9997;
+}
+
+.navigation-dropdown button {
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 10px 15px;
+}

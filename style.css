@@ -6,6 +6,10 @@
   transition: 1s ease-in-out;
 }
 
+#about-page {
+  transition: 1s ease-in-out;
+}
+
 .hide {
   opacity: 0;
   pointer-events: none;

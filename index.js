@@ -68,10 +68,13 @@ function call(number) {
   call("082 872 6262");
 }
 
-//Scroll to contact section
+//Scroll to section
 
 const contactBtn = document.getElementById("Contact-el");
 const contactSection = document.getElementById("contact-section");
+const servicesSection = document.getElementById("services-section");
+const aboutSection = document.getElementById("about-section");
+const homeSection = document.getElementById("home-section");
 
 const beginProjectBtn = document.getElementById("begin-project");
 
@@ -80,4 +83,13 @@ contactBtn.addEventListener("click", function () {
 });
 beginProjectBtn.addEventListener("click", function () {
   contactSection.scrollIntoView({ behavior: "smooth" });
+});
+servicesBtn.addEventListener("click", function () {
+  servicesSection.scrollIntoView({ behavior: "smooth" });
+});
+aboutBtn.addEventListener("click", function () {
+  aboutSection.scrollIntoView({ behavior: "smooth" });
+});
+homeBtn.addEventListener("click", function () {
+  homeSection.scrollIntoView({ behavior: "smooth" });
 });
