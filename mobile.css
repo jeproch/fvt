@@ -25,7 +25,6 @@ body {
   background-color: rgb(34, 34, 34);
   border-radius: 0 0 25% 0;
   position: absolute;
-  transition: 1s ease-in-out;
 }
 
 .heading-contents {
@@ -91,6 +90,10 @@ ion-icon:hover {
   align-items: center;
   position: relative;
   z-index: 9997;
+}
+
+.close-dropdown {
+  align-items: center;
 }
 
 .close-dropdown button {

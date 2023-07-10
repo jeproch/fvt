@@ -5,11 +5,14 @@ let servicesPage = document.getElementById("resources-page");
 let aboutPage = document.getElementById("about-page");
 let servicesBtn = document.getElementById("services-button");
 let aboutBtn = document.getElementById("about-button");
+let projectsBtn = document.getElementById("projects-button");
+let projectsPage = document.getElementById("projects-page");
 
 document.addEventListener("DOMContentLoaded", function () {
   // Code to execute when the DOM is ready
   servicesPage.classList.add("hide");
   aboutPage.classList.add("hide");
+  projectsPage.classList.add("hide");
   var isMobile =
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -22,10 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Buttons
 
+projectsBtn.addEventListener("click", function () {
+  projectsPage.classList.remove("hide");
+  homePage.classList.add("hide");
+  servicesPage.classList.add("hide");
+  aboutPage.classList.add("hide");
+});
+
 servicesBtn.addEventListener("click", function () {
   homePage.classList.add("hide");
   servicesPage.classList.remove("hide");
   aboutPage.classList.add("hide");
+  projectsPage.classList.add("hide");
 });
 
 aboutBtn.addEventListener("click", function () {
@@ -33,12 +44,14 @@ aboutBtn.addEventListener("click", function () {
   // add about page class list
   aboutPage.classList.remove("hide");
   servicesPage.classList.add("hide");
+  projectsPage.classList.add("hide");
 });
 
 homeBtn.addEventListener("click", function () {
   homePage.classList.remove("hide");
   servicesPage.classList.add("hide");
   aboutPage.classList.add("hide");
+  projectsPage.classList.add("hide");
 });
 
 //all external sources and mail =

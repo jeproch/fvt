@@ -3,6 +3,7 @@ const dropdownEl = document.getElementById("navigation-dropdown");
 const homePage = document.getElementById("home-page");
 const navDropdown = document.getElementById("navigation-dropdown");
 const headingContents = document.getElementById("heading-contents");
+const closeBtn = document.getElementById("close-button");
 
 document.addEventListener("DOMContentLoaded", function () {
   dropdownEl.classList.add("hide");
@@ -14,4 +15,11 @@ menuBtn.addEventListener("click", function () {
   navDropdown.classList.remove("hide");
   menuBtn.classList.add("hide");
   headingContents.classList.add("hide");
+});
+
+closeBtn.addEventListener("click", function () {
+  dropdownEl.classList.add("hide");
+  navDropdown.classList.add("hide");
+  menuBtn.classList.remove("hide");
+  headingContents.classList.remove("hide");
 });
