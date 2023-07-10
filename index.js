@@ -5,14 +5,13 @@ let servicesPage = document.getElementById("resources-page");
 let aboutPage = document.getElementById("about-page");
 let servicesBtn = document.getElementById("services-button");
 let aboutBtn = document.getElementById("about-button");
-let projectsBtn = document.getElementById("projects-button");
-let projectsPage = document.getElementById("projects-page");
+let projectBtn = document.getElementById("projects-button");
 
 document.addEventListener("DOMContentLoaded", function () {
   // Code to execute when the DOM is ready
   servicesPage.classList.add("hide");
   aboutPage.classList.add("hide");
-  projectsPage.classList.add("hide");
+
   var isMobile =
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -25,18 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Buttons
 
-projectsBtn.addEventListener("click", function () {
-  projectsPage.classList.remove("hide");
-  homePage.classList.add("hide");
-  servicesPage.classList.add("hide");
-  aboutPage.classList.add("hide");
-});
-
 servicesBtn.addEventListener("click", function () {
   homePage.classList.add("hide");
   servicesPage.classList.remove("hide");
   aboutPage.classList.add("hide");
-  projectsPage.classList.add("hide");
 });
 
 aboutBtn.addEventListener("click", function () {
@@ -44,14 +35,12 @@ aboutBtn.addEventListener("click", function () {
   // add about page class list
   aboutPage.classList.remove("hide");
   servicesPage.classList.add("hide");
-  projectsPage.classList.add("hide");
 });
 
 homeBtn.addEventListener("click", function () {
   homePage.classList.remove("hide");
   servicesPage.classList.add("hide");
   aboutPage.classList.add("hide");
-  projectsPage.classList.add("hide");
 });
 
 //all external sources and mail =
@@ -83,18 +72,20 @@ function call(number) {
 
 //Scroll to section
 
+const projectSection = document.getElementById("project-section");
 const contactBtn = document.getElementById("Contact-el");
 const contactSection = document.getElementById("contact-section");
 const servicesSection = document.getElementById("services-section");
 const aboutSection = document.getElementById("about-section");
 const homeSection = document.getElementById("home-section");
 
-const beginProjectBtn = document.getElementById("begin-project");
-
-contactBtn.addEventListener("click", function () {
-  contactSection.scrollIntoView({ behavior: "smooth" });
+projectBtn.addEventListener("click", function () {
+  homePage.classList.remove("hide");
+  aboutPage.classList.add("hide");
+  servicesPage.classList.add("hide");
+  projectSection.scrollIntoView({ behavior: "smooth" });
 });
-beginProjectBtn.addEventListener("click", function () {
+contactBtn.addEventListener("click", function () {
   contactSection.scrollIntoView({ behavior: "smooth" });
 });
 servicesBtn.addEventListener("click", function () {

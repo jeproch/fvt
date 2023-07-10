@@ -133,29 +133,6 @@ ul {
   color: rgb(255, 255, 255);
 }
 
-.project-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 10px;
-}
-
-.project-button button {
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  color: white;
-  background-color: rgb(223, 14, 14);
-  border: none;
-  border-radius: 5px;
-}
-
-.project-button button:hover {
-  transition: 0.3s ease-in-out;
-  background-color: #7c7c7c;
-  padding: 12px 17px;
-}
-
 h1 {
   font-size: 50px;
 }

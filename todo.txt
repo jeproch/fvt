@@ -1,0 +1,12 @@
+To do for Full Build 
+
+// Desktop
+
+1.
+Make button in order to go to all previosuly completed projects
+
+
+// Mobile 
+
+1. 
+Add contents for UI
