@@ -82,18 +82,14 @@ ion-icon:hover {
 }
 
 .navigation-dropdown {
+  display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center; /* Change 'flex-start' to 'center' */
   position: relative;
   z-index: 9997;
+  margin-right: 30px;
   transition: 0.3s ease-in-out;
-}
-
-.navigation-dropdown h2 {
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 35px;
-  color: aliceblue;
 }
 
 .close-dropdown {
