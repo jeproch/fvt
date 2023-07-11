@@ -130,17 +130,6 @@ ion-icon:hover {
 
 /* Home Contents */
 
-@media screen and (max-width: 354px) {
-  .home-contents {
-    margin-top: 1000px;
-    margin-left: 20px;
-  }
-
-  .home-contents p {
-    color: rgb(107, 107, 107);
-  }
-}
-
 .home-contents {
   margin-top: 120px;
   margin-left: 20px;
@@ -148,4 +137,19 @@ ion-icon:hover {
 
 .home-contents p {
   color: rgb(107, 107, 107);
+  margin-right: 10px;
+}
+
+/* Belangrik vir kleiner screens!! Update indien daar fout is */
+
+@media screen and (max-width: 354px) {
+  .home-contents {
+    margin-top: 140px;
+    margin-left: 20px;
+  }
+
+  .home-contents p {
+    color: rgb(107, 107, 107);
+    margin-right: 10px;
+  }
 }
