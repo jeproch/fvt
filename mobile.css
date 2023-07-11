@@ -22,7 +22,7 @@ body {
 .heading {
   display: flex;
   flex-direction: row;
-  padding-right: 30px;
+  margin-right: 30px;
   background-color: rgb(34, 34, 34);
   border-radius: 0 0 25% 0;
   position: absolute;
@@ -136,53 +136,4 @@ ion-icon:hover {
 
 .home-contents p {
   color: rgb(107, 107, 107);
-}
-
-/* Media queries for mobile screens */
-
-@media only screen and (max-width: 600px) {
-  /* Adjust the styles for mobile screens here */
-  .heading {
-    padding-right: 10px;
-    margin-right: 30px;
-  }
-
-  .heading h1 {
-    margin-left: 10px;
-    margin-top: 5px;
-  }
-
-  .heading h2 {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-
-  .heading-objects button {
-    margin-top: 10px;
-    margin-right: 10px;
-    padding: 10px 10px;
-  }
-
-  .navigation-dropdown {
-    margin-right: 10px;
-  }
-
-  .close-dropdown {
-    margin-bottom: 20px;
-  }
-
-  .navigation-dropdown button {
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 7px 10px;
-  }
-
-  .home-contents {
-    margin-top: 80px;
-    margin-left: 10px;
-  }
-
-  .home-contents p {
-    font-size: 14px;
-  }
 }
