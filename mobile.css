@@ -35,6 +35,7 @@ body {
 .heading h1 {
   margin-left: 20px;
   margin-top: 10px;
+  font-size: 35px;
 }
 
 .heading h2 {
@@ -48,7 +49,7 @@ body {
   background-color: transparent;
   top: 0;
   right: 0;
-  margin-top: 10px;
+  margin-top: 1px;
   border: none;
   padding: 20px 20px;
   z-index: 1;
@@ -107,7 +108,7 @@ ion-icon:hover {
   right: 0;
   border-radius: 5px;
   border: none;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-right: 25px;
   background-color: rgb(223, 14, 14);
 }
