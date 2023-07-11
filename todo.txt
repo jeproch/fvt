@@ -11,4 +11,4 @@ Make button in order to go to all previosuly completed projects
 1. 
 Add contents for UI
 2.
-Fix dropdown buttons
+adjust hover styling and check transitions between dropdown and home 
