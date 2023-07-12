@@ -139,8 +139,21 @@ ion-icon:hover {
 }
 
 .home-contents p {
-  color: rgb(107, 107, 107);
+  color: rgb(191, 192, 194);
   margin-right: 10px;
+}
+
+.home-contents-image {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.home-contents-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
 }
 
 /* Belangrik vir kleiner screens!! Update indien daar fout is */
@@ -152,7 +165,7 @@ ion-icon:hover {
   }
 
   .home-contents p {
-    color: rgb(107, 107, 107);
+    color: rgb(191, 192, 194);
     margin-right: 10px;
   }
 }
@@ -164,7 +177,7 @@ ion-icon:hover {
   }
 
   .home-contents p {
-    color: rgb(107, 107, 107);
+    color: rgb(191, 192, 194);
     margin-right: 10px;
   }
 }
