@@ -6,24 +6,6 @@ const headingContents = document.getElementById("heading-contents");
 const closeBtn = document.getElementById("close-button");
 const homeContents = document.getElementById("home-contents");
 
-window.addEventListener("scroll", function () {
-  var scrollHeight = document.documentElement.scrollHeight;
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  var clientHeight = document.documentElement.clientHeight;
-
-  if (scrollTop + clientHeight >= scrollHeight) {
-    var hiddenContent = document.querySelectorAll(".hidden-content");
-    hiddenContent.forEach(function (content) {
-      content.style.display = "block";
-    });
-  } else {
-    var hiddenContent = document.querySelectorAll(".hidden-content");
-    hiddenContent.forEach(function (content) {
-      content.style.display = "none";
-    });
-  }
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   dropdownEl.classList.add("hide");
   navDropdown.classList.add("hide");
@@ -36,6 +18,7 @@ menuBtn.addEventListener("click", function () {
   menuBtn.classList.add("hide");
   headingContents.classList.add("hide");
   homeContents.classList.add("hide");
+  homePage.classList.add("hide");
 });
 
 closeBtn.addEventListener("click", function () {
@@ -44,6 +27,7 @@ closeBtn.addEventListener("click", function () {
   menuBtn.classList.remove("hide");
   headingContents.classList.remove("hide");
   homeContents.classList.remove("hide");
+  homePage.classList.remove("hide");
 });
 
 //Static functions
