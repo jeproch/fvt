@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: row;
   background-color: rgb(34, 34, 34);
+  box-sizing: border-box;
   width: 100%;
   position: absolute;
 }
@@ -30,12 +31,13 @@ body {
 .heading-contents {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .heading h1 {
   margin-left: 20px;
   margin-top: 10px;
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .heading h2 {
@@ -95,7 +97,7 @@ ion-icon:hover {
   margin-left: 30px;
 }
 
-.button-for-dropdowns button:hover {
+.button-for-dropdowns:hover {
   padding: 17px 23px;
   background-color: lightslategray;
 }
@@ -143,7 +145,19 @@ ion-icon:hover {
 
 /* Belangrik vir kleiner screens!! Update indien daar fout is */
 
-@media screen and (max-width: 354px) {
+@media screen and (max-width: 354px) and (min-width: 333px) {
+  .home-contents {
+    margin-top: 140px;
+    margin-left: 20px;
+  }
+
+  .home-contents p {
+    color: rgb(107, 107, 107);
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 333px) and (min-width: 0px) {
   .home-contents {
     margin-top: 140px;
     margin-left: 20px;
