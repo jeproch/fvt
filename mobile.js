@@ -5,6 +5,7 @@ const navDropdown = document.getElementById("navigation-dropdown");
 const headingContents = document.getElementById("heading-contents");
 const closeBtn = document.getElementById("close-button");
 const homeContents = document.getElementById("home-contents");
+const bottomBar = document.getElementById("bottom-bar-section");
 
 document.addEventListener("DOMContentLoaded", function () {
   dropdownEl.classList.add("hide");
@@ -19,6 +20,7 @@ menuBtn.addEventListener("click", function () {
   headingContents.classList.add("hide");
   homeContents.classList.add("hide");
   homePage.classList.add("hide");
+  bottomBar.classList.add("hide");
 });
 
 closeBtn.addEventListener("click", function () {
@@ -28,6 +30,7 @@ closeBtn.addEventListener("click", function () {
   headingContents.classList.remove("hide");
   homeContents.classList.remove("hide");
   homePage.classList.remove("hide");
+  bottomBar.classList.remove("hide");
 });
 
 //Static functions
