@@ -14,12 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       navigator.userAgent
     );
 
-  if (isMobile) {
-    window.location.href = "mobile.html";
-  } else {
-    handleRedirection();
-  }
-
   servicesPage.classList.add("hide");
   aboutPage.classList.add("hide");
 });
