@@ -8,7 +8,4 @@ Make button in order to go to all previosuly completed projects
 
 // Mobile 
 
-1. 
-Add contents for UI
-2.
-Give functionality to the buttons in the dropdown
+1. Practically finished

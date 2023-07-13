@@ -1,344 +1,693 @@
-/* Default styles for all screen sizes */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
+@media (prefers-color-scheme: light) {
+  /* Default styles for all screen sizes */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
 
-body {
-  background-color: rgb(71, 71, 71);
-}
+  body {
+    background-color: rgb(71, 71, 71);
+  }
 
-.hide {
-  opacity: 0;
-  pointer-events: none;
-  height: 0;
-  overflow: hidden;
-}
+  .hide {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+  }
 
-/* HEADING */
+  /* HEADING */
 
-.heading {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(34, 34, 34);
-  box-sizing: border-box;
-  width: 100%;
-  position: absolute;
-}
+  .heading {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(34, 34, 34);
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+  }
 
-.heading-contents {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+  .heading-contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-.heading h1 {
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 28px;
-}
-
-.heading h2 {
-  font-size: 20px;
-  margin-left: 20px;
-  color: rgb(150, 150, 150);
-}
-
-.menu-dropdown-button button {
-  position: absolute;
-  background-color: transparent;
-  top: 0;
-  right: 0;
-  margin-top: 1px;
-  border: none;
-  padding: 20px 20px;
-  z-index: 1;
-}
-
-ion-icon {
-  font-size: 32px;
-}
-
-ion-icon:hover {
-  transition: 0.3s ease-in-out;
-  font-size: 38px;
-}
-
-.heading-text {
-  color: white;
-  margin-right: 30px;
-}
-
-/* MENU */
-
-.menu-dropdown {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.432);
-  backdrop-filter: blur(10px);
-  z-index: 9998;
-  display: none;
-}
-
-.button-for-dropdowns {
-  margin-top: 30px;
-  padding: 15px 20px;
-  width: 120px;
-  margin-bottom: 10px;
-  background-color: rgb(223, 14, 14);
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s ease-in-out;
-  margin-left: 30px;
-  color: black;
-}
-
-.button-for-dropdowns:hover {
-  padding: 17px 23px;
-  background-color: lightslategray;
-}
-
-/* CLOSE BUTTON */
-
-.button-for-dropdowns-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 5px;
-  border: none;
-  margin-top: 30px;
-  margin-right: 25px;
-  background-color: rgb(223, 14, 14);
-}
-
-.button-for-dropdowns-close button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  padding: 15px 15px;
-  background-color: rgb(223, 14, 14);
-}
-
-/* CLOSE BUTTON */
-
-.navigation-dropdown {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Home Contents */
-
-.home-page {
-  transition: 1s ease-in-out;
-}
-
-.home-contents {
-  margin-top: 120px;
-  margin-left: 20px;
-}
-
-.home-contents h2 {
-  color: white;
-}
-
-.home-contents p {
-  color: rgb(191, 192, 194);
-  margin-right: 10px;
-}
-
-.home-contents-image {
-  width: 200px;
-  height: auto;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.home-contents-image img {
-  width: 200px;
-  height: auto;
-  border-radius: 20%;
-}
-
-.resources-class {
-  margin-top: 20px;
-  margin-left: 0px;
-}
-
-.resources-class li {
-  margin-bottom: 15px;
-  color: rgb(202, 202, 202);
-}
-
-/* Belangrik vir kleiner screens!! Update indien daar fout is */
-
-@media screen and (max-width: 354px) and (min-width: 333px) {
-  .home-contents {
-    margin-top: 140px;
+  .heading h1 {
     margin-left: 20px;
+    margin-top: 10px;
+    font-size: 28px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(150, 150, 150);
+  }
+
+  .menu-dropdown-button button {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    margin-top: 1px;
+    border: none;
+    padding: 20px 20px;
+    z-index: 1;
+  }
+
+  ion-icon {
+    font-size: 32px;
+  }
+
+  ion-icon:hover {
+    transition: 0.3s ease-in-out;
+    font-size: 38px;
+  }
+
+  .heading-text {
+    color: white;
+    margin-right: 30px;
+  }
+
+  /* MENU */
+
+  .menu-dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(10px);
+    z-index: 9998;
+    display: none;
+  }
+
+  .button-for-dropdowns {
+    margin-top: 30px;
+    padding: 15px 20px;
+    width: 120px;
+    margin-bottom: 10px;
+    background-color: rgb(223, 14, 14);
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 30px;
+    color: black;
+  }
+
+  .button-for-dropdowns:hover {
+    padding: 17px 23px;
+    background-color: lightslategray;
+  }
+
+  /* CLOSE BUTTON */
+
+  .button-for-dropdowns-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    margin-right: 25px;
+    background-color: rgb(223, 14, 14);
+  }
+
+  .button-for-dropdowns-close button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 15px 15px;
+    background-color: rgb(223, 14, 14);
+  }
+
+  /* CLOSE BUTTON */
+
+  .navigation-dropdown {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Home Contents */
+
+  .home-page {
+    transition: 1s ease-in-out;
+  }
+
+  .home-contents {
+    margin-top: 120px;
+    margin-left: 20px;
+  }
+
+  .home-contents h2 {
+    color: white;
   }
 
   .home-contents p {
     color: rgb(191, 192, 194);
     margin-right: 10px;
   }
+
+  .home-contents-image {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .home-contents-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+  }
+
+  .resources-class {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .resources-class li {
+    margin-bottom: 15px;
+    color: rgb(202, 202, 202);
+  }
+
+  /* Belangrik vir kleiner screens!! Update indien daar fout is */
+
+  @media screen and (max-width: 354px) and (min-width: 333px) {
+    .home-contents {
+      margin-top: 140px;
+      margin-left: 20px;
+    }
+
+    .home-contents p {
+      color: rgb(191, 192, 194);
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 333px) and (min-width: 0px) {
+    .home-contents {
+      margin-top: 140px;
+      margin-left: 20px;
+    }
+
+    .home-contents p {
+      color: rgb(191, 192, 194);
+      margin-right: 10px;
+    }
+  }
+
+  /* bottom bar content */
+  .bottom-bar {
+    width: 100%;
+    height: 240px;
+    background-color: rgb(37, 37, 37);
+    bottom: 0;
+    left: 0;
+  }
+
+  .bottom-bar h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 35px;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-top: 20px; /* Baie belangrik!! */
+  }
+
+  .bottom-bar p {
+    margin-left: 20px;
+    color: #929292;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .bottom-bar li {
+    color: #929292;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  /* All MENU DROPDOWN BUTTON STYLINGS */
+
+  .pages button {
+    margin-top: 30px;
+    padding: 15px 20px;
+    width: 120px;
+    margin-bottom: 20px;
+    background-color: rgb(223, 14, 14);
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    color: black;
+  }
+
+  .pages button:hover {
+    padding: 17px 23px;
+    background-color: lightslategray;
+  }
+
+  /* services-btn */
+  .services-page {
+    margin-left: 20px;
+    transition: 1s ease-in-out;
+  }
+
+  .services-page h2 {
+    color: white;
+    font-size: 35px;
+  }
+
+  .services-page ul {
+    margin-left: 0px;
+    margin-right: 10px;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+  }
+
+  .services-page li {
+    margin-bottom: 10px;
+  }
+
+  .services-page img {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  /* about-btn */
+  .about-page {
+    margin-left: 20px;
+    transition: 1s ease-in-out;
+  }
+
+  .about-page h2 {
+    color: white;
+    font-size: 35px;
+  }
+
+  .about-page p {
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .about-page img {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  /* contact-btn */
+
+  .contact-page {
+    margin-left: 20px;
+    transition: 1s ease-in-out;
+  }
+
+  .contact-page h2 {
+    color: white;
+    font-size: 35px;
+  }
+
+  .contact-page p {
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .contact-page ul {
+    margin-left: 0px;
+    margin-right: 10px;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+  }
+
+  .contact-page li {
+    margin-bottom: 10px;
+  }
+
+  .contact-page img {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 }
 
-@media screen and (max-width: 333px) and (min-width: 0px) {
-  .home-contents {
-    margin-top: 140px;
+@media (prefers-color-scheme: dark) {
+  /* Default styles for all screen sizes */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  body {
+    background-color: rgb(71, 71, 71);
+  }
+
+  .hide {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* HEADING */
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(34, 34, 34);
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+  }
+
+  .heading-contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .heading h1 {
     margin-left: 20px;
+    margin-top: 10px;
+    font-size: 28px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(150, 150, 150);
+  }
+
+  .menu-dropdown-button button {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    margin-top: 1px;
+    border: none;
+    padding: 20px 20px;
+    z-index: 1;
+  }
+
+  ion-icon {
+    font-size: 32px;
+  }
+
+  ion-icon:hover {
+    transition: 0.3s ease-in-out;
+    font-size: 38px;
+  }
+
+  .heading-text {
+    color: white;
+    margin-right: 30px;
+  }
+
+  /* MENU */
+
+  .menu-dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(10px);
+    z-index: 9998;
+    display: none;
+  }
+
+  .button-for-dropdowns {
+    margin-top: 30px;
+    padding: 15px 20px;
+    width: 120px;
+    margin-bottom: 10px;
+    background-color: rgb(223, 14, 14);
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 30px;
+    color: black;
+  }
+
+  .button-for-dropdowns:hover {
+    padding: 17px 23px;
+    background-color: lightslategray;
+  }
+
+  /* CLOSE BUTTON */
+
+  .button-for-dropdowns-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    margin-right: 25px;
+    background-color: rgb(223, 14, 14);
+  }
+
+  .button-for-dropdowns-close button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 15px 15px;
+    background-color: rgb(223, 14, 14);
+  }
+
+  /* CLOSE BUTTON */
+
+  .navigation-dropdown {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Home Contents */
+
+  .home-page {
+    transition: 1s ease-in-out;
+  }
+
+  .home-contents {
+    margin-top: 120px;
+    margin-left: 20px;
+  }
+
+  .home-contents h2 {
+    color: white;
   }
 
   .home-contents p {
     color: rgb(191, 192, 194);
     margin-right: 10px;
   }
-}
 
-/* bottom bar content */
-.bottom-bar {
-  width: 100%;
-  height: 240px;
-  background-color: rgb(37, 37, 37);
-  bottom: 0;
-  left: 0;
-}
+  .home-contents-image {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+  }
 
-.bottom-bar h2 {
-  color: rgb(255, 255, 255);
-  margin-top: 35px;
-  font-size: 35px;
-  margin-left: 20px;
-  margin-bottom: 0px;
-  padding-top: 20px; /* Baie belangrik!! */
-}
+  .home-contents-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+  }
 
-.bottom-bar p {
-  margin-left: 20px;
-  color: #929292;
-  font-size: 25px;
-  margin-top: 20px;
-}
+  .resources-class {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
 
-.bottom-bar li {
-  color: #929292;
-  font-size: 20px;
-  margin-left: 20px;
-}
+  .resources-class li {
+    margin-bottom: 15px;
+    color: rgb(202, 202, 202);
+  }
 
-/* All MENU DROPDOWN BUTTON STYLINGS */
+  /* Belangrik vir kleiner screens!! Update indien daar fout is */
 
-.pages button {
-  margin-top: 30px;
-  padding: 15px 20px;
-  width: 120px;
-  margin-bottom: 20px;
-  background-color: rgb(223, 14, 14);
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s ease-in-out;
-  color: black;
-}
+  @media screen and (max-width: 354px) and (min-width: 333px) {
+    .home-contents {
+      margin-top: 140px;
+      margin-left: 20px;
+    }
 
-.pages button:hover {
-  padding: 17px 23px;
-  background-color: lightslategray;
-}
+    .home-contents p {
+      color: rgb(191, 192, 194);
+      margin-right: 10px;
+    }
+  }
 
-/* services-btn */
-.services-page {
-  margin-left: 20px;
-  transition: 1s ease-in-out;
-}
+  @media screen and (max-width: 333px) and (min-width: 0px) {
+    .home-contents {
+      margin-top: 140px;
+      margin-left: 20px;
+    }
 
-.services-page h2 {
-  color: white;
-  font-size: 35px;
-}
+    .home-contents p {
+      color: rgb(191, 192, 194);
+      margin-right: 10px;
+    }
+  }
 
-.services-page ul {
-  margin-left: 0px;
-  margin-right: 10px;
-  color: rgb(184, 184, 184);
-  font-size: 20px;
-}
+  /* bottom bar content */
+  .bottom-bar {
+    width: 100%;
+    height: 240px;
+    background-color: rgb(37, 37, 37);
+    bottom: 0;
+    left: 0;
+  }
 
-.services-page li {
-  margin-bottom: 10px;
-}
+  .bottom-bar h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 35px;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-top: 20px; /* Baie belangrik!! */
+  }
 
-.services-page img {
-  width: 200px;
-  height: auto;
-  border-radius: 20%;
-  margin-left: 10px;
-  margin-top: 10px;
-}
+  .bottom-bar p {
+    margin-left: 20px;
+    color: #929292;
+    font-size: 25px;
+    margin-top: 20px;
+  }
 
-/* about-btn */
-.about-page {
-  margin-left: 20px;
-  transition: 1s ease-in-out;
-}
+  .bottom-bar li {
+    color: #929292;
+    font-size: 20px;
+    margin-left: 20px;
+  }
 
-.about-page h2 {
-  color: white;
-  font-size: 35px;
-}
+  /* All MENU DROPDOWN BUTTON STYLINGS */
 
-.about-page p {
-  color: rgb(184, 184, 184);
-  font-size: 20px;
-  margin-right: 10px;
-}
+  .pages button {
+    margin-top: 30px;
+    padding: 15px 20px;
+    width: 120px;
+    margin-bottom: 20px;
+    background-color: rgb(223, 14, 14);
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    color: black;
+  }
 
-.about-page img {
-  width: 200px;
-  height: auto;
-  border-radius: 20%;
-  margin-left: 10px;
-  margin-top: 10px;
-}
+  .pages button:hover {
+    padding: 17px 23px;
+    background-color: lightslategray;
+  }
 
-/* contact-btn */
+  /* services-btn */
+  .services-page {
+    margin-left: 20px;
+    transition: 1s ease-in-out;
+  }
 
-.contact-page {
-  margin-left: 20px;
-  transition: 1s ease-in-out;
-}
+  .services-page h2 {
+    color: white;
+    font-size: 35px;
+  }
 
-.contact-page h2 {
-  color: white;
-  font-size: 35px;
-}
+  .services-page ul {
+    margin-left: 0px;
+    margin-right: 10px;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+  }
 
-.contact-page p {
-  color: rgb(184, 184, 184);
-  font-size: 20px;
-  margin-right: 10px;
-}
+  .services-page li {
+    margin-bottom: 10px;
+  }
 
-.contact-page ul {
-  margin-left: 0px;
-  margin-right: 10px;
-  color: rgb(184, 184, 184);
-  font-size: 20px;
-}
+  .services-page img {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 
-.contact-page li {
-  margin-bottom: 10px;
-}
+  /* about-btn */
+  .about-page {
+    margin-left: 20px;
+    transition: 1s ease-in-out;
+  }
 
-.contact-page img {
-  width: 200px;
-  height: auto;
-  border-radius: 20%;
-  margin-left: 10px;
-  margin-top: 10px;
+  .about-page h2 {
+    color: white;
+    font-size: 35px;
+  }
+
+  .about-page p {
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .about-page img {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  /* contact-btn */
+
+  .contact-page {
+    margin-left: 20px;
+    transition: 1s ease-in-out;
+  }
+
+  .contact-page h2 {
+    color: white;
+    font-size: 35px;
+  }
+
+  .contact-page p {
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .contact-page ul {
+    margin-left: 0px;
+    margin-right: 10px;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+  }
+
+  .contact-page li {
+    margin-bottom: 10px;
+  }
+
+  .contact-page img {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 }
