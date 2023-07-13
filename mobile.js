@@ -44,3 +44,18 @@ function call(number) {
 
   call("082 872 6262");
 }
+
+//TUT
+
+function openTUT() {
+  window.open("https://tutarchitecture.co.za/", "_blank");
+}
+
+//TUT
+//SACAP
+
+function openSACAP() {
+  window.open("https://www.sacapsa.com/", "_blank");
+}
+
+//SACAP

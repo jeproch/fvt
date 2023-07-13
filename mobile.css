@@ -138,6 +138,10 @@ ion-icon:hover {
   margin-left: 20px;
 }
 
+.home-contents h2 {
+  color: white;
+}
+
 .home-contents p {
   color: rgb(191, 192, 194);
   margin-right: 10px;
@@ -154,6 +158,16 @@ ion-icon:hover {
   width: 200px;
   height: auto;
   border-radius: 20%;
+}
+
+.resources-class {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.resources-class li {
+  margin-bottom: 15px;
+  color: rgb(202, 202, 202);
 }
 
 /* Belangrik vir kleiner screens!! Update indien daar fout is */
