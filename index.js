@@ -9,9 +9,6 @@ let projectBtn = document.getElementById("projects-button");
 
 document.addEventListener("DOMContentLoaded", function () {
   // Code to execute when the DOM is ready
-  servicesPage.classList.add("hide");
-  aboutPage.classList.add("hide");
-
   var isMobile =
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -19,7 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (isMobile) {
     window.location.href = "mobile.html";
+  } else {
+    handleRedirection();
   }
+
+  servicesPage.classList.add("hide");
+  aboutPage.classList.add("hide");
 });
 
 // Buttons

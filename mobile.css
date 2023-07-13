@@ -95,6 +95,7 @@ ion-icon:hover {
   border-radius: 5px;
   transition: 0.3s ease-in-out;
   margin-left: 30px;
+  color: black;
 }
 
 .button-for-dropdowns:hover {
@@ -133,6 +134,10 @@ ion-icon:hover {
 
 /* Home Contents */
 
+.home-page {
+  transition: 1s ease-in-out;
+}
+
 .home-contents {
   margin-top: 120px;
   margin-left: 20px;
@@ -162,7 +167,7 @@ ion-icon:hover {
 
 .resources-class {
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .resources-class li {
@@ -225,4 +230,124 @@ ion-icon:hover {
   color: #929292;
   font-size: 20px;
   margin-left: 20px;
+}
+
+/* All MENU DROPDOWN BUTTON STYLINGS */
+
+.pages button {
+  margin-top: 30px;
+  padding: 15px 20px;
+  width: 120px;
+  margin-bottom: 10px;
+  background-color: rgb(223, 14, 14);
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  color: black;
+}
+
+.pages button:hover {
+  padding: 17px 23px;
+  background-color: lightslategray;
+}
+
+/* services-btn */
+.services-page {
+  margin-left: 20px;
+  transition: 1s ease-in-out;
+}
+
+.services-page h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.services-page ul {
+  margin-left: 0px;
+  margin-right: 10px;
+  color: rgb(184, 184, 184);
+  font-size: 20px;
+}
+
+.services-page li {
+  margin-bottom: 10px;
+}
+
+.services-image {
+  display: flex;
+  justify-content: center;
+}
+
+.services-page img {
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+}
+
+/* about-btn */
+.about-page {
+  margin-left: 20px;
+  transition: 1s ease-in-out;
+}
+
+.about-page h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.about-page p {
+  color: rgb(184, 184, 184);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.about-page img {
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+/* contact-btn */
+
+.contact-page {
+  margin-left: 20px;
+  transition: 1s ease-in-out;
+}
+
+.contact-page h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.contact-page p {
+  color: rgb(184, 184, 184);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact-page ul {
+  margin-left: 0px;
+  margin-right: 10px;
+  color: rgb(184, 184, 184);
+  font-size: 20px;
+}
+
+.contact-page li {
+  margin-bottom: 10px;
+}
+
+.contact-page img {
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+}
+
+.contact-image {
+  display: flex;
+  justify-content: center;
 }

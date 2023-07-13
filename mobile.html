@@ -9,9 +9,12 @@
   <body>
     <div class="navigation-dropdown" id="navigation-dropdown">
       <div class="navigation-content">
-        <button class="button-for-dropdowns">Services</button> <br />
-        <button class="button-for-dropdowns">About</button> <br />
-        <button class="button-for-dropdowns">Contact</button> <br />
+        <button class="button-for-dropdowns" id="services-btn">Services</button>
+        <br />
+        <button class="button-for-dropdowns" id="about-btn">About</button>
+        <br />
+        <button class="button-for-dropdowns" id="contact-btn">Contact</button>
+        <br />
       </div>
       <div class="close-dropdown">
         <button id="close-button" class="button-for-dropdowns-close">
@@ -27,7 +30,9 @@
       <div class="heading-contents" id="heading-contents">
         <div class="heading">
           <div class="heading-text">
-            <h1>FVT Architecture</h1>
+            <section id="home-section">
+              <h1>FVT Architecture</h1>
+            </section>
             <h2>"A house is a machine for living in"</h2>
           </div>
         </div>
@@ -78,6 +83,64 @@
             <li onclick="openTUT()">TUT - Department of Architecture</li>
           </ul>
         </div>
+      </div>
+    </div>
+
+    <!-- Buttons se functions gaan pages wees om minder deurmekaar te maak. -->
+    <div class="pages" id="pages">
+      <div class="services-page" id="services-page">
+        <h2>Services</h2>
+        <ul>
+          <li>Legalization of Building Work (as built)</li>
+          <li>New Building Design</li>
+          <li>Practical Advice on Design and Materials</li>
+          <li>Facilitation of Students Practical Studies (requires cv)</li>
+        </ul>
+        <div class="services-image">
+          <img src="images/upside2.jpg" />
+        </div>
+        <br />
+        <button id="home-after-button" onclick="homeAfterButton()">Home</button>
+      </div>
+      <div class="about-page" id="about-page">
+        <h2>About</h2>
+        <p>
+          Francois van Tonder began his architectural journey in 1999, working
+          on small-scale design projects as an independent consultant. He also
+          served as a part-time lecturer, teaching Computer-Aided Design (CAD)
+          at Technikon Pretoria. In addition, he taught horticulture at the same
+          institution for five years. From 2012 to 2013, Francois worked as a
+          lecturer at Inscape Education Group, focusing on architectural
+          draughting and technology.
+        </p>
+        <p>
+          With a B-Tech degree in Architectural Technology, specializing in
+          management, Francois van Tonder is a highly skilled Professional
+          Senior Architectural Technologist. He leads FVT Architecture as its
+          sole practitioner, bringing expertise in architectural principles,
+          attention to detail, and the ability to create spaces that seamlessly
+          blend functionality and aesthetics.
+        </p>
+
+        <div class="about-image">
+          <img src="images/about-section-image-mobile.jpg" />
+        </div>
+        <br />
+        <button id="home-after-button" onclick="homeAfterButton()">Home</button>
+      </div>
+      <div class="contact-page" id="contact-page">
+        <h2>Contact</h2>
+        <p>Contact Francois van Tonder to start a project</p>
+        <ul>
+          <li onclick="call()">Cell: 082 872 6262</li>
+          <li onclick="openGmail()">E-mail: fvt@fvt.co.za</li>
+          <li>professional Senior Architectural Technologist</li>
+        </ul>
+        <div class="contact-image">
+          <img src="images/Her2.jpg" alt="" />
+        </div>
+        <br />
+        <button id="home-after-button" onclick="homeAfterButton()">Home</button>
       </div>
     </div>
 
