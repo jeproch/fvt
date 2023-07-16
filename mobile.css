@@ -199,6 +199,7 @@
       flex-wrap: wrap;
       align-items: flex-start;
       flex-direction: column; /* Add this line */
+      margin-bottom: 20px;
     }
 
     .heading h1 {
@@ -559,6 +560,7 @@
       flex-wrap: wrap;
       align-items: flex-start;
       flex-direction: column; /* Add this line */
+      margin-bottom: 20px;
     }
 
     .heading h1 {
