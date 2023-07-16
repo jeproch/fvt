@@ -31,20 +31,21 @@
 
   .heading-contents {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .heading h1 {
     margin-left: 20px;
     margin-top: 10px;
-    font-size: 28px;
+    flex: 1 100%;
   }
 
   .heading h2 {
     font-size: 20px;
     margin-left: 20px;
     color: rgb(150, 150, 150);
+    flex: 1 100%;
   }
 
   .menu-dropdown-button button {
@@ -176,9 +177,8 @@
     color: rgb(202, 202, 202);
   }
 
-  /* Belangrik vir kleiner screens!! Update indien daar fout is */
-
-  @media screen and (max-width: 354px) and (min-width: 333px) {
+  /*
+    @media screen and (max-width: 354px) and (min-width: 333px) {
     .home-contents {
       margin-top: 140px;
       margin-left: 20px;
@@ -187,6 +187,33 @@
     .home-contents p {
       color: rgb(191, 192, 194);
       margin-right: 10px;
+    }
+  }
+  */
+
+  /* Belangrik vir kleiner screens!! Update indien daar fout is */
+
+  @media screen and (max-width: 354px) and (min-width: 333px) {
+    .heading-contents {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: column; /* Add this line */
+    }
+
+    .heading h1 {
+      margin-left: 20px;
+      margin-top: 10px;
+      flex: 1 100%;
+      order: 1; /* Add this line */
+    }
+
+    .heading h2 {
+      font-size: 15px;
+      margin-left: 20px;
+      color: rgb(150, 150, 150);
+      flex: 1 100%;
+      order: 2; /* Add this line */
     }
   }
 
@@ -378,20 +405,21 @@
 
   .heading-contents {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .heading h1 {
     margin-left: 20px;
     margin-top: 10px;
-    font-size: 28px;
+    flex: 1 100%;
   }
 
   .heading h2 {
     font-size: 20px;
     margin-left: 20px;
     color: rgb(150, 150, 150);
+    flex: 1 100%;
   }
 
   .menu-dropdown-button button {
@@ -526,14 +554,26 @@
   /* Belangrik vir kleiner screens!! Update indien daar fout is */
 
   @media screen and (max-width: 354px) and (min-width: 333px) {
-    .home-contents {
-      margin-top: 140px;
-      margin-left: 20px;
+    .heading-contents {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: column; /* Add this line */
     }
 
-    .home-contents p {
-      color: rgb(191, 192, 194);
-      margin-right: 10px;
+    .heading h1 {
+      margin-left: 20px;
+      margin-top: 10px;
+      flex: 1 100%;
+      order: 1; /* Add this line */
+    }
+
+    .heading h2 {
+      font-size: 15px;
+      margin-left: 20px;
+      color: rgb(150, 150, 150);
+      flex: 1 100%;
+      order: 2; /* Add this line */
     }
   }
 
